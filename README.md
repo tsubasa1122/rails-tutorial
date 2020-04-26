@@ -1,24 +1,23 @@
-# README
+# Rails6 tutorialを学び直す
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 環境
+```
+Ruby 2.7.1
+Rails 6.0
+```
 
-Things you may want to cover:
 
-* Ruby version
+### Set up
+```
+$ git clone git@github.com:tsubasa1122/rails-tutorial.git
+$ docker-compose build
+$ docker-compose run web bundle exec rails webpacker:install
 
-* System dependencies
+# DBの作成
+$ docker-compose run web rake db:create
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Run
+```
+$ docker-compose up
+```
